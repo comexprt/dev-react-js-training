@@ -6,6 +6,9 @@ import Welcome from './components/Welcome'
 import Hello from './components/hello'
 import Message from './components/Message'
 import Counter from './components/Counter'
+import FunctionClick from './components/FunctionClick'
+import ClassClick from './components/ClassClick'
+
 
 // for advance export
 // import {Greet} from './components/Greet'
@@ -13,7 +16,9 @@ import Counter from './components/Counter'
 function App() {
   return (
     <div className="App">
-      <Counter/>
+      <FunctionClick/>
+      <ClassClick/>
+      {/* <Counter/> */}
       {/* <Message /> */}
         {/* <Greet name="John" heroName="Captain America">
             <p>This is children props</p>
@@ -23,7 +28,7 @@ function App() {
         </Greet> */}
         {/* <Greet name="Ompad" heroName="Superman" />  */}
 
-        <Welcome name="John" heroName="Captain America"/>
+        {/* <Welcome name="John" heroName="Captain America"/> */}
 {/* 
         <Welcome name="John" heroName="Captain America"/>
         <Welcome name="Noah" heroName="Batman" />
