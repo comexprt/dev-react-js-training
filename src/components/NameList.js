@@ -30,6 +30,7 @@ function NameList(){
 
         </div>
     )
+    
 }
 
 export default NameList 
