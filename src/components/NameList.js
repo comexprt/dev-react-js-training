@@ -1,7 +1,6 @@
 import React from 'react'
 import Person from './Person'
 
-
 function NameList(){
     const names = ['Bruce','Clark','Diana']
     const persons = [
@@ -24,7 +23,6 @@ function NameList(){
             skill:'Vue'
         }
     ]
-
     const personList = persons.map(person =>(<Person person={person}></Person>))
     return(
         <div>

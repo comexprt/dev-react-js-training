@@ -1,6 +1,4 @@
 import React from 'react'
-
-
 function Person({person}){
  
     return(
@@ -9,5 +7,4 @@ function Person({person}){
         </div>
     )
 }
-
 export default Person 
