@@ -11,9 +11,19 @@ import Hello from './components/hello'
 function App() {
   return (
     <div className="App">
-        <Greet />
-        <Welcome />
-        <Hello />
+        <Greet name="John" heroName="Captain America">
+            <p>This is children props</p>
+        </Greet>
+        <Greet name="Noah" heroName="Batman" >
+          <button>Action</button>
+        </Greet>
+        <Greet name="Ompad" heroName="Superman" /> 
+
+        <Welcome name="John" heroName="Captain America"/>
+        <Welcome name="Noah" heroName="Batman" />
+        <Welcome name="Ompad" heroName="Superman" /> 
+       
+        {/* <Hello /> */}
     </div>
   );
 }
