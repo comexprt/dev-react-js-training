@@ -16,7 +16,11 @@ import './App.css';
 // import Inline from './components/Inline'
 // import './appStyles.css'
 // import styles from './appStyles.module.css'
- import Form from './components/Form'
+//  import Form from './components/Form'
+ import LifecycleA from './components/LifecycleA'
+
+// import LifecycleB from './components/LifecycleB'
+
 
 
 
@@ -30,7 +34,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Form />
+      <LifecycleA />
       {/* <Counter/> */}
       {/* <Message /> */}
         {/* <Greet name="John" heroName="Captain America">
