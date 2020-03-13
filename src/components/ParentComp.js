@@ -11,13 +11,15 @@ class ParentComp extends Component{
           name : 'john'
       }
   }
-componentDidMount(){
+
+  componentDidMount(){
     setInterval(()=>{
         this.setState({
             name : 'john'
         })
     }, 2000)
 }
+
 
   render(){
     console.log('*********** Parent comp Render ***********')
