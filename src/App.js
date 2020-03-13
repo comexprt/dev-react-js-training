@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import './App.css';
-import ClickCounterTwo from './components/ClickCounterTwo';
-import HoverCounterTwo from './components/HoverCounterTwo';
-// import User from './components/User';
-import Counter2 from './components/Counter2';
+import ComponentC from './components/ComponentC';
+import {UserProvider} from './components/userContext'
+import ComponentF from './components/ComponentF';
 
 
 class App extends Component{
@@ -11,24 +10,10 @@ class App extends Component{
   render(){
     return (
       <div className="App">
-        {/* <ClickCounterTwo/>
-        <HoverCounterTwo />
-        <User render= {(isLoggedIn)=> isLoggedIn ? 'John Noah' : 'Guest'} /> */}
-        <Counter2>
-
-
-        {(count,incrementCount)=>(
-            <ClickCounterTwo count={count} incrementCount={incrementCount} />
-          )}
-     
-     </Counter2>
-        <Counter2 >
-          {(count,incrementCount)=>(
-            <HoverCounterTwo count={count} incrementCount={incrementCount} />
-          )}
-        
-                </Counter2>
-       
+        <UserProvider value="John Noah">
+            <ComponentC/>
+        </UserProvider>
+          
       </div>
       )
   }
