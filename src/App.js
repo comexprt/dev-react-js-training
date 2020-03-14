@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import './App.css';
-import ComponentC from './components/ComponentC';
-import {UserProvider} from './components/userContext'
-import ComponentF from './components/ComponentF';
+import PostList from './newComponents/PostList';
+
 
 
 class App extends Component{
@@ -10,9 +9,7 @@ class App extends Component{
   render(){
     return (
       <div className="App">
-        <UserProvider value="John Noah">
-            <ComponentC/>
-        </UserProvider>
+        <PostList/>
           
       </div>
       )
