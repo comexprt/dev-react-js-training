@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import './App.css';
-
-import HookCounterOne from './hookComponents/HookCounterOne';
-import ClassCounterOne from './hookComponents/ClassCounterOne';
+import ClassMouse from './hookComponents/ClassMouse';
+import HookMouse from './hookComponents/HookMouse';
 
 
 class App extends Component{
@@ -10,8 +9,8 @@ class App extends Component{
   render(){
     return (
       <div className="App">
-        {/* <ClassCounterOne /> */}
-        <HookCounterOne  />
+        {/* <ClassMouse /> */}
+        <HookMouse />
       </div>
       )
   }
