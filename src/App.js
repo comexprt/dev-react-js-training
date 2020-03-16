@@ -1,18 +1,23 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './App.css';
-import DataFetching from './hookComponents/DataFetching';
+import ComponentC from './components/ComponentC';
 
 
-class App extends Component{
+export const UserContext = React.createContext()
+export const ChannelContext = React.createContext()
 
-  render(){
-    return (
-      <div className="App">
-          <DataFetching />
-      </div>
-      )
-  }
 
+function App() {
+  return (
+    <div className='App'>
+      <UserContext.Provider value = {'John Noah'} >
+          <ChannelContext.Provider value={'comxpert'}>
+            <ComponentC />
+          </ChannelContext.Provider>
+      </UserContext.Provider>
+
+    </div>
+  )
 }
 
 export default App;
