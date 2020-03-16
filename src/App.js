@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './App.css';
 import ClassMouse from './hookComponents/ClassMouse';
 import HookMouse from './hookComponents/HookMouse';
+import MouseContainer from './hookComponents/MouseContainer';
 
 
 class App extends Component{
@@ -10,7 +11,8 @@ class App extends Component{
     return (
       <div className="App">
         {/* <ClassMouse /> */}
-        <HookMouse />
+        {/* <HookMouse /> */}
+        <MouseContainer />
       </div>
       )
   }
