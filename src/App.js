@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.css';
-import HookCounterFour from './hookComponents/HookCounterFour';
 
+import HookCounterOne from './hookComponents/HookCounterOne';
 
 
 class App extends Component{
@@ -9,7 +9,8 @@ class App extends Component{
   render(){
     return (
       <div className="App">
-         <HookCounterFour />
+        {/* <ClassCounter /> */}
+        <HookCounterOne  />
       </div>
       )
   }
