@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import './App.css';
-import IntervalClassCounter from './hookComponents/IntervalClassCounter';
-import IntervalHookCounter from './hookComponents/IntervalHookCounter';
+import DataFetching from './hookComponents/DataFetching';
 
 
 class App extends Component{
@@ -9,8 +8,7 @@ class App extends Component{
   render(){
     return (
       <div className="App">
-        <IntervalClassCounter />
-        <IntervalHookCounter />
+          <DataFetching />
       </div>
       )
   }
