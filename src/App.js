@@ -1,15 +1,15 @@
 import React from 'react'
 import './App.css';
-import DocTitleOne from './hookComponents/DocTitleOne';
-import DocTitleTwo from './hookComponents/DocTitleTwo';
+import CounterOne from './hookComponents/CounterOne';
+import CounterTwo from './hookComponents/CounterTwo';
 
 
 
 function App() {
   return (
     <div className='App'>
-        <DocTitleOne />
-        <DocTitleTwo />
+        <CounterOne />
+        <CounterTwo />
     </div>
   )
 }
