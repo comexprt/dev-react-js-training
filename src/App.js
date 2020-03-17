@@ -1,13 +1,13 @@
 import React from 'react'
 import './App.css';
-import Counter from './hookComponents/Counter';
+import FocusInput from './hookComponents/FocusInput';
 
 
 
 function App() {
   return (
     <div className='App'>
-         <Counter />
+       <FocusInput />
     </div>
   )
 }
